@@ -1,4 +1,4 @@
-const input = document.getElementById('emailad');
-const inputValue = input.value;
-console.log(inputValue);
-console.log("hellow world");
+document.getElementById('getstarted').addEventListener('click', function() {
+    const text = document.getElementById('emailad').value;
+    console.log(text);
+});

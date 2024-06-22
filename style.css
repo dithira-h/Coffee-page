@@ -28,17 +28,34 @@ section h3{
 
 input{
   font-family: "Playfair Display";
+  transition:0.4s;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   padding: 10px;
   border-radius: 50px;
-  width: 200px;
+  width: 100px;
   border: 0px;
   background-color: #FED8B1;
 }
+
+input:hover{
+  width: 220px;
+}
+
+input:target{
+  border: 0px;
+}
+
+input:focus{
+  width: 230px;
+  border: 0px;
+  background-color: #FED8B1;
+}
+
 button{
+  transition:0.4s;
   font-family: "Playfair Display";
   display: flex;
   margin-left: auto;
@@ -56,4 +73,14 @@ button:hover{
   transition: all 0.4s ease-out 100ms;
   background-color: #6F4E37;
   color:#FED8B1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.rightimg{
+  width: auto;
+  height: 400px;
 }
